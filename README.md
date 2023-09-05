@@ -1,7 +1,9 @@
 # 🚀 Getting started with Strapi
 
 Version node installée en local : 16.20.2
+
 Version npm installée en local : 8.19.4
+
 Version Strapi : 4.13.1
 
 Strapi comes with a full featured [Command Line Interface](https://docs.strapi.io/dev-docs/cli) (CLI) which lets you scaffold and manage your project in seconds.
