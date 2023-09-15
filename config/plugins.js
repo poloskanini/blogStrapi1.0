@@ -11,6 +11,18 @@ module.exports = ({ env }) => ({
       },
     },
   },
+
+  //* ESSAI pour essayer d'enregistrer les datas sur ma BDD PostGresql de RENDER si la config ci-dessous ne le fait pas
+
+  // upload: {
+  //   config: {
+  //     providerOptions: {
+  //       localServer: {
+  //         maxage: 300000
+  //       },
+  //     },
+  //   },
+  // },
   upload: {
     config: {
       provider: 'cloudinary',
