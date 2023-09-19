@@ -13,19 +13,23 @@
   "pluginOptions": {},
   "attributes": {
     "title": {
-      "type": "string"
+      "type": "string",
+      "default": "Mon titre d'article",
+      "required": true,
+      "unique": true
     },
     "content": {
       "type": "customField",
       "options": {
         "preset": "toolbarBaloon"
       },
-      "customField": "plugin::ckeditor5.CKEditor"
+      "customField": "plugin::ckeditor5.CKEditor",
+      "required": true
     },
     "image": {
       "type": "media",
       "multiple": false,
-      "required": false,
+      "required": true,
       "allowedTypes": [
         "images",
         "files",
@@ -34,16 +38,24 @@
       ]
     },
     "author": {
-      "type": "string"
+      "type": "string",
+      "default": "Sandrine MENEZES",
+      "required": true
     },
     "date": {
-      "type": "date"
+      "type": "date",
+      "required": true
     },
     "slug": {
-      "type": "string"
+      "type": "string",
+      "default": "mon-titre-sans-espaces-ni-accents",
+      "required": true,
+      "unique": true
     },
     "description": {
-      "type": "text"
+      "type": "text",
+      "required": true,
+      "default": "3 premières lignes de mon article"
     }
   }
 }

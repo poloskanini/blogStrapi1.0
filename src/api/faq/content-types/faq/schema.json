@@ -13,17 +13,24 @@
   "pluginOptions": {},
   "attributes": {
     "question": {
-      "type": "string"
+      "type": "string",
+      "required": true,
+      "unique": true,
+      "default": "Votre question"
     },
     "answer": {
       "type": "customField",
       "options": {
         "preset": "toolbarBaloon"
       },
-      "customField": "plugin::ckeditor5.CKEditor"
+      "customField": "plugin::ckeditor5.CKEditor",
+      "required": true
     },
     "slug": {
-      "type": "string"
+      "type": "string",
+      "required": true,
+      "unique": true,
+      "default": "titre-sans-espaces-ni-accents"
     }
   }
 }
