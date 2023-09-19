@@ -2,8 +2,7 @@
 
 // const { createCoreRouter } = require('@strapi/strapi').factories;
 
-// module.exports = createCoreRouter('api::post.post');
-
+// module.exports = createCoreRouter('api::faq.faq');
 
 "use strict";
 
@@ -12,7 +11,7 @@
  */
 
 const { createCoreRouter } = require("@strapi/strapi").factories;
-const defaultRouter = createCoreRouter("api::post.post");
+const defaultRouter = createCoreRouter("api::faq.faq");
 
 // function to add to or override default router methods
 const customRouter = (innerRouter, routeOveride = [], extraRoutes = []) => {
@@ -49,8 +48,8 @@ const customRouter = (innerRouter, routeOveride = [], extraRoutes = []) => {
 const myOverideRoutes = [
   {
     method: "GET",
-    path: "/posts/:slug",
-    handler: "api::post.post.findOne",
+    path: "/Faqs/:slug",
+    handler: "api::faq.faq.findOne",
   },
 ];
 
