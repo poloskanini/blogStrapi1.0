@@ -43,7 +43,7 @@
       "required": true
     },
     "date": {
-      "type": "datetime",
+      "type": "date",
       "required": true
     },
     "slug": {
