@@ -17,12 +17,6 @@
     },
     "reviewer": {
       "type": "string"
-    },
-    "film": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::film.film",
-      "inversedBy": "reviews"
     }
   }
 }
